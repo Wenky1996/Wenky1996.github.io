@@ -23,15 +23,15 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"wenky1996.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
-<meta name="description" content="ORB-SLAM3: An Accurate Open-Source Libraryfor Visual, Visual-Inertial and Multi-Map SLAMAbstract：  本文介绍了ORB-SLAM3，这是第一个能够使用针孔和鱼眼相机模型使用单目、立体和RGB-D相机执行视觉、视觉惯性和多地图SLAM的系统第一个主要的创新之处是一个基于特征的紧耦合的视觉惯性SLAM系统，">
+<meta name="description" content="ORB-SLAM3: An Accurate Open-Source Libraryfor Visual, Visual-Inertial and Multi-Map SLAMAbstract：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 本文介绍了ORB-SLAM3，这是第一个能够使用针孔和鱼眼相机模型使用单目、立体和RGB-D相机执行视觉、视觉惯性和多地图SLAM的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="论文阅读笔记—ORBSLAM3">
 <meta property="og:url" content="https://wenky1996.github.io/2021/04/25/2021_paper1/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="ORB-SLAM3: An Accurate Open-Source Libraryfor Visual, Visual-Inertial and Multi-Map SLAMAbstract：  本文介绍了ORB-SLAM3，这是第一个能够使用针孔和鱼眼相机模型使用单目、立体和RGB-D相机执行视觉、视觉惯性和多地图SLAM的系统第一个主要的创新之处是一个基于特征的紧耦合的视觉惯性SLAM系统，">
+<meta property="og:description" content="ORB-SLAM3: An Accurate Open-Source Libraryfor Visual, Visual-Inertial and Multi-Map SLAMAbstract：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 本文介绍了ORB-SLAM3，这是第一个能够使用针孔和鱼眼相机模型使用单目、立体和RGB-D相机执行视觉、视觉惯性和多地图SLAM的">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-04-25T08:12:03.055Z">
-<meta property="article:modified_time" content="2021-04-25T08:55:35.294Z">
+<meta property="article:modified_time" content="2021-04-25T09:22:37.501Z">
 <meta property="article:author" content="Wenky">
 <meta name="twitter:card" content="summary">
 
@@ -147,7 +147,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ORB-SLAM3-An-Accurate-Open-Source-Libraryfor-Visual-Visual-Inertial-and-Multi-Map-SLAM"><span class="nav-number">1.</span> <span class="nav-text">ORB-SLAM3: An Accurate Open-Source Libraryfor Visual, Visual-Inertial and Multi-Map SLAM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Abstract%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">Abstract：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#INTRODUCTION"><span class="nav-number">1.2.</span> <span class="nav-text">INTRODUCTION</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RELATED-WORK"><span class="nav-number">1.3.</span> <span class="nav-text">RELATED WORK</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#III-SYSTEM-OVERVIEW"><span class="nav-number">1.4.</span> <span class="nav-text">III. SYSTEM OVERVIEW</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ORB-SLAM3-An-Accurate-Open-Source-Libraryfor-Visual-Visual-Inertial-and-Multi-Map-SLAM"><span class="nav-number">1.</span> <span class="nav-text">ORB-SLAM3: An Accurate Open-Source Libraryfor Visual, Visual-Inertial and Multi-Map SLAM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Abstract%EF%BC%9A"><span class="nav-number">1.1.</span> <span class="nav-text">Abstract：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#INTRODUCTION"><span class="nav-number">1.2.</span> <span class="nav-text">INTRODUCTION</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RELATED-WORK"><span class="nav-number">1.3.</span> <span class="nav-text">RELATED WORK</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -160,7 +160,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -225,7 +225,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-04-25 16:12:03 / Modified: 16:55:35" itemprop="dateCreated datePublished" datetime="2021-04-25T16:12:03+08:00">2021-04-25</time>
+      <time title="Created: 2021-04-25 16:12:03 / Modified: 17:22:37" itemprop="dateCreated datePublished" datetime="2021-04-25T16:12:03+08:00">2021-04-25</time>
     </span>
 
   
@@ -238,15 +238,53 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="ORB-SLAM3-An-Accurate-Open-Source-Libraryfor-Visual-Visual-Inertial-and-Multi-Map-SLAM"><a href="#ORB-SLAM3-An-Accurate-Open-Source-Libraryfor-Visual-Visual-Inertial-and-Multi-Map-SLAM" class="headerlink" title="ORB-SLAM3: An Accurate Open-Source Libraryfor Visual, Visual-Inertial and Multi-Map SLAM"></a>ORB-SLAM3: An Accurate Open-Source Libraryfor Visual, Visual-Inertial and Multi-Map SLAM</h2><h3 id="Abstract："><a href="#Abstract：" class="headerlink" title="Abstract："></a>Abstract：</h3><p>  本文介绍了ORB-SLAM3，这是第一个能够使用针孔和鱼眼相机模型使用单目、立体和RGB-D相机执行视觉、视觉惯性和多地图SLAM的系统<br>第一个主要的创新之处是一个基于特征的紧耦合的视觉惯性SLAM系统，它完全依赖于最大后验估计，即使在惯性测量单元初始化阶段。其结果是一个在室内和室外环境中实时稳定运行的系统，比以前的方法精确2到5倍。<br>第二个主要创新是一个多地图系统，该系统依赖于一种新的具有改进的召回率的地点识别方法。由于它，ORB-SLAM3能够在长时间的视觉信息不佳的情况下运行:当它丢失时，它会启动一个新的地图，在重新访问地图区域时，该地图将与以前的地图无缝合并。与仅使用最后几秒钟的信息的视觉里程计系统相比，ORB-SLAM3是第一个能够在所有算法阶段重用所有先前信息的系统。这允许在集束调整中包括共同可见的关键帧，这提供了提高精确度的高视差测量，即使它们在时间上相距很远或者它们来自先前的建图。<br>我们的实验表明，在所有传感器配置中，ORBSLAM3与文献中可用的最佳系统一样鲁棒，并且更加精确。值得注意的是，我们的立体惯性SLAM在EuRoC无人机上实现了3.6厘米的平均精度，在TUM-VI数据集的房间中快速手持运动下实现了9毫米的平均精度，这是一个代表增强现实/虚拟现实场景的设置。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h2 id="ORB-SLAM3-An-Accurate-Open-Source-Libraryfor-Visual-Visual-Inertial-and-Multi-Map-SLAM"><a href="#ORB-SLAM3-An-Accurate-Open-Source-Libraryfor-Visual-Visual-Inertial-and-Multi-Map-SLAM" class="headerlink" title="ORB-SLAM3: An Accurate Open-Source Libraryfor Visual, Visual-Inertial and Multi-Map SLAM"></a>ORB-SLAM3: An Accurate Open-Source Libraryfor Visual, Visual-Inertial and Multi-Map SLAM</h2><h3 id="Abstract："><a href="#Abstract：" class="headerlink" title="Abstract："></a>Abstract：</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 本文介绍了ORB-SLAM3，这是第一个能够使用针孔和鱼眼相机模型使用单目、立体和RGB-D相机执行视觉、视觉惯性和多地图SLAM的系统。
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第一个主要的创新之处是一个基于特征的紧耦合的视觉惯性SLAM系统，它完全依赖于最大后验估计，即使在惯性测量单元初始化阶段。其结果是一个在室内和室外环境中实时稳定运行的系统，比以前的方法精确2到5倍。
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 第二个主要创新是一个多地图系统，该系统依赖于一种新的具有改进的召回率的地点识别方法。由于它，ORB-SLAM3能够在长时间的视觉信息不佳的情况下运行:当它丢失时，它会启动一个新的地图，在重新访问地图区域时，该地图将与以前的地图无缝合并。与仅使用最后几秒钟的信息的视觉里程计系统相比，ORB-SLAM3是第一个能够在所有算法阶段重用所有先前信息的系统。这允许在集束调整中包括共同可见的关键帧，这提供了提高精确度的高视差测量，即使它们在时间上相距很远或者它们来自先前的建图。
+我们的实验表明，在所有传感器配置中，ORBSLAM3与文献中可用的最佳系统一样鲁棒，并且更加精确。值得注意的是，我们的立体惯性SLAM在EuRoC无人机上实现了3.6厘米的平均精度，在TUM-VI数据集的房间中快速手持运动下实现了9毫米的平均精度，这是一个代表增强现实/虚拟现实场景的设置。
 
-<h3 id="INTRODUCTION"><a href="#INTRODUCTION" class="headerlink" title="INTRODUCTION"></a>INTRODUCTION</h3><p> —现代系统依赖于最大后验估计，在视觉传感器的情况下，最大后验估计对应于束调整，或者是基于特征的方法中最小化特征重投影误差的几何束调整，或者是直接方法中最小化一组选定像素的光度误差的光度束调整。</p>
-<p> —-随着最近集成回闭环技术的VO系统的出现，VO和SLAM之间的边界更加分散。视觉SLAM的目标是使用移动板载的传感器来构建环境地图并实时计算地图中物体的姿态。相比之下，VO系统将注意力放在计算物体的自我运动上，而不是构建地图上。SLAM地图的最大优势在于，它允许在BA中匹配和使用以前的观测，执行三种类型的数据关联:</p>
-<p><strong>短期数据关联</strong>：—-匹配最近几秒内获得的地图元素。这是大多数VO系统使用的唯一数据关联类型，一旦环境元素离开视野，它们就会被丢弃，即使系统在同一区域移动，也会导致持续的估计漂移。<br><strong>中期数据关联</strong>：—-匹配离累计漂移仍然较小相机较近的地图元素。这些可以在BA中以与短期观测相同的方式进行匹配和使用，并允许系统在地图区域移动时达到零漂移。它们是我们的系统与具有回环检测的VO系统相比获得更高精度的关键。<br><strong>长期数据关联</strong>：—-使用位置识别技术将观察结果与以前访问过的区域中的元素进行匹配，而不管累积漂移(回环检测)或跟踪是否丢失(重定位)。长期匹配允许使用位姿图优化或更准确地说，使用BA来重置漂移和校正回环。这是中大型环型环境下SLAM精度的关键。<br>在这项工作中，我们建立在ORB-SLAM [2]，[3]和ORBSLAM Visual-Inertial [4]的基础上，这是第一个能够充分利用短期、中期和长期数据关联的视觉和视觉-惯性系统，在建图区域达到零漂移。在这里，我们进一步提供了多地图数据关联，这使我们能够匹配和使用来自先前建图的BA地图元素，实现了SLAM系统的真正目标:构建一个以后可以用来提供精确定位的地图。<br>__ORB-SLAM3的主要创新是__：<br>    <strong>A monocular and stereo visual-inertial SLAM system</strong>：<br>一种单目和立体视觉惯性SLAM系统，即使在惯性测量单元初始化阶段，也完全依赖于最大后验估计。所提出的初始化方法先前已在[6]中介绍过。这里我们添加了它与ORB-SLAM视觉惯性[4]的集成，并在公共数据集进行彻底评估。我们的结果表明，单目和立体视觉惯性系统是极其鲁棒的，并且比其他视觉惯性方法更加精确，甚至在没有回环的序列中也是如此。<br> <strong>B High-recall place recognition</strong><br>高召回率地点识别。许多最近的视觉SLAM和VO系统[2]，[7]，[8]使用DBoW2词袋库包解决了位置识别问题[9]。DBoW2需要时间一致性，在检查几何一致性之前，将三个连续的关键帧匹配到同一区域，以牺牲召回为代价来提高精度。结果，系统在回环检测和重用以前的地图方面太慢。我们提出了一种新的位置识别算法，首先检查候选关键帧的几何一致性，然后检查与三个可共视关键帧的局部一致性，这三个关键帧在大多数情况下已经在地图中。这种策略提高了查全率，增加了数据关联的密度，提高了地图精度，但代价是计算成本稍高。<br> <strong>C ORB-SLAM Atlas</strong><br>ORB-SLAM地图集，第一个完整的多地图SLAM系统，能够处理视觉和视觉惯性系统，在单目和立体配置中。地图集可以表示一组不连续的地图，并在其上平滑地应用所有的建图操作:位置识别、相机重新定位、循环闭合回环和精确的无缝地图合并。这允许自动使用和组合在不同时间构建的地图，执行增量多session SLAM。视觉传感器的ORBSLAM地图集的初步版本在[10]中介绍。在这里，我们添加了新的地点识别系统，可视化多地图系统及其对公共数据集的评估。<br><strong>D An abstract camera representation</strong><br>一种抽象的摄像机表示，使得SLAM代码与所使用的摄像机模型无关，并允许通过提供投影、非投影和雅可比函数来添加新模型。我们提供了针孔[11]和鱼眼[12]模型的实现。</p>
-<h3 id="RELATED-WORK"><a href="#RELATED-WORK" class="headerlink" title="RELATED WORK"></a>RELATED WORK</h3><p>  —-表一总结了最具代表性的视觉和视觉惯性系统，显示了用于估算和数据关联的主要技术。对于现代系统，表中包含的定性准确度和稳健性等级基于第七节中报告的比较，对于经典系统，基于文献[2]，[52]中以前的比较。</p>
-<p><strong>A.    Visual SLAM</strong><br>—-单目SLAM首先在MonoSLAM [13]，[14]，[53]中使用扩展卡尔曼滤波器(EKF)和通过相关进行引导搜索的后续图像中跟踪的ShiTomasi点来解决。中期数据关联通过使用保证所用特征匹配一致的技术得到了显著改善，实现了手持可视SLAM [54]，[55]。<br>相比之下，基于关键帧的方法仅使用几个选定的帧来估计地图，丢弃来自中间帧的信息。这允许以关键帧速率执行更昂贵但更精确的BA优化。最具代表性的系统是PTAM [16]，它将摄像机跟踪和建图分成两个并行的线程。对于相同的计算成本，基于关键帧的技术比滤波更精确[56]，成为视觉SLAM和VO的黄金标准。在[57]中，使用滑动窗口BA实现了大规模单目SLAM，在[58]中，使用双窗口优化和一个协方差图实现了大规模单目SLAM。<br>基于这些想法，ORB-SLAM [2]，[3]使用ORB特征，其描述符提供短期和中期数据关联，建立一个协可视性图来限制跟踪和建图的复杂性，并使用词袋库DBoW2 [9]执行回环和重新定位，实现长期数据关联。到目前为止，是唯一一个集成了三种数据关联的可视化SLAM系统，我们认为这是其出色准确性的关键。在这项工作中，我们使用新的地图集系统提高了其在纯视觉SLAM中的鲁棒性，该系统在跟踪丢失时启动新的地图，并使用新的高召回率地点识别方法提高了其在复杂场景中的准确性。<br>直接方法不提取特征，而是直接使用图像中的像素强度，并通过最小化光度误差来估计运动和结构。LSD-SLAM [20]能够使用高梯度像素构建大规模半密集地图。然而，地图估计被简化为位姿图，精度低于PTAM和ORB-SLAM [2]。hybrid系统SVO [23]，[24]提取快速特征，使用直接方法从一帧到另一帧跟踪特征和任何具有非零强度梯度的像素，并使用重投影误差优化相机轨迹和3D结构。SVO效率极高，但作为一种纯VO方法，它只进行短期数据关联，这限制了它的准确性。直接稀疏里程计DSO [27]能够在特征点提取器表现不佳的情况下计算精确的相机姿态，增强低纹理区域或模糊图像的鲁棒性。它引入了局部光度BA，同时优化了7个最近关键帧的窗口和点的反向深度。这项工作的扩展包括立体视觉[29]，使用特征和DBoW2的闭环[59] [60]，以及视觉惯性里程计[46]。直接稀疏建图DSM [31]在直接方法中引入了建图重用的思想，显示了中期数据关联的重要性。在所有情况下，缺乏短期、中期和长期数据关联的整合会导致比我们的建议更低的准确性(见第七节)。<br><strong>B.    Visual-Inertial SLAM</strong><br>—-视觉和惯性传感器的结合提供了对低纹理、运动模糊和遮挡的鲁棒性，并且在单目系统的情况下，使得尺度可观察。<br>紧耦合方法的研究可以追溯到MSKF[33]，在MSKF[33]中，特征数量的EKF二次代价通过特征边缘化来避免。最初的系统在[34]中得到完善，并在[35]、[36]中扩展到立体视觉。第一个基于关键帧和集束调整的紧密耦合视觉里程计系统是OKVIS [38]，[39]，它也能够使用单目和立体视觉。然而这些系统依赖于特征，但ROVIO [41]，[42]使用直接数据关联为EFK提供光度误差。<br>ORB-SLAM-VI [4]首次提出了一种视觉惯性SLAM系统，该系统能够重用具有短期、中期和长期数据关联的地图，并在基于惯性测量单元预积分的精确局部视觉惯性BA中使用它们[61]，[62]。然而，其惯性测量单元初始化技术太慢，需要15秒钟，这降低了鲁棒性和准确性。<br>Closed-form solution of visual-inertial structure from motion[63]<br>Simultaneous state initialization and gyroscope bias calibration in visual inertial aided navigation[64]<br>[63]，[64]中提出了更快的初始化技术，基于闭合形式的解来联合恢复尺度、重力、加速度计偏差和初始速度以及视觉特征深度。至关重要的是，它们忽略了惯性测量单元的噪声特性，并最小化了空间点的3D误差，而不是它们的重投影误差，这是基于特征的计算机视觉的黄金标准。我们以前的工作[65]表明，这导致了巨大的不可预测的错误。<br>Kimera: an open source library for real-time metric-semantic localization and mappin[8]<br>Visual-inertial mapping with non-linear factor recovery[47]<br>VINS-Mono [7]是一个非常精确和鲁棒的单目里程计系统，使用DBoW2和4 DoF位姿图优化和地图合并进行闭环。特征跟踪是Lucas-Kanade跟踪器执行的，比描述符匹配稍微健壮一些。在VINS-Fusion [44]中，它已被拓展到立体和立体惯性。Kimera [8]是一个新颖的杰出的度量-语义建图系统，但它的度量部分包括立体-惯性里程计加上与DBoW2的闭环和姿态图优化，实现了与VINS-Fusion相似的精度。最近的BASALT [47]是一个立体视觉-惯性里程计系统，它从视觉-惯性里程计中提取非线性因子用于BA，并匹配ORB特征进行回环，实现非常好到极好的精度。<br>Direct sparse visual inertial odometry using dynamic marginalization[66]<br>最近，VI-DSO [66]将DSO扩展到视觉惯性里程计。他们提出了一种捆绑调整，它将惯性观测与选定高梯度像素的光度误差相结合，从而提供非常好的精度。由于成功地利用了高梯度像素中的4个信息，在纹理较差的场景区域中也增强了鲁棒性。他们的初始化方法依赖于视觉惯性BA，需要20-30秒才能收敛到1%的标度误差内。<br>在这项工作中，我们建立在ORB-SLAM-VI的基础上，并将其扩展到立体惯性SLAM。我们提出了一种新的基于最大后验估计的快速初始化方法，该方法充分考虑了视觉和惯性传感器的不确定性，在2秒钟内估计出误差为5%的真实尺度，在15秒钟内收敛到1%的尺度误差。</p>
-<h3 id="III-SYSTEM-OVERVIEW"><a href="#III-SYSTEM-OVERVIEW" class="headerlink" title="III. SYSTEM OVERVIEW"></a>III. SYSTEM OVERVIEW</h3><p>—-ORB-SLAM3建立在ORB-SLAM2 [3]和ORBSLAM-VI [4]之上。这是一个完整的多地图和多会话系统，能够在纯视觉或视觉惯性模式下工作，使用单眼、立体或RGB-D传感器，使用针孔和鱼眼相机模型。图1显示了主要的系统组件，这些组件与ORB-SLAM2的组件类似，但有一些重要的创新之处，下面进行总结。<br><strong>Atlas</strong>：地图集是由一组不相连的地图组成的多地图表示。有一个活动的地图，其中跟踪线程定位传入的帧，并由局部建图程使用新的关键帧不断优化和增长。我们将地图集中的其他地图称为非活动地图。系统建立一个独特的关键帧数据库，用于重新定位、回环检测和地图合并。<br><strong>Tracking thread</strong>：跟踪线程处理传感器信息，并实时计算当前帧相对于活动地图的姿态，将匹配地图特征点的重投影误差降至最低。它还决定当前帧是否成为关键帧。在视觉惯性模式下，通过在优化中包含惯性残差来估计体速度和IMU偏差。当追踪丢失时，追踪线程试图在所有地图集的地图中重新定位当前帧。如果重新定位，跟踪将恢复，并在需要时切换活动地图。否则，在一定时间后，活动地图被存储为非活动地图，并从头开始初始化新的活动地图。<br><strong>Local mapping thread</strong>：局部建图线程向活动地图添加关键帧和点，移除冗余的关键帧和点，并使用视觉或视觉惯性集束调整来细化地图，在靠近当前帧的关键帧的本地窗口中操作。另外，在惯性情况下，惯性测量单元参数由建图线程使用我们新颖的最大后验（MAP）估计技术来初始化和细化。<br><strong>Loop and map merging thread</strong>：回环和地图合并线程以关键帧速率检测活动地图和整个地图集之间的公共区域。如果公共区域属于活动地图，它执行回环校正；如果它属于不同的地图，则两个地图会无缝地合并成一个地图，成为活动地图。回环校正后，在独立线程中启动一个完整的BA，以进一步细化建图，而不影响实时性能。</p>
+<h3 id="INTRODUCTION"><a href="#INTRODUCTION" class="headerlink" title="INTRODUCTION"></a>INTRODUCTION</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 现代系统依赖于最大后验估计，在视觉传感器的情况下，最大后验估计对应于束调整，或者是基于特征的方法中最小化特征重投影误差的几何束调整，或者是直接方法中最小化一组选定像素的光度误差的光度束调整。
+随着最近集成回闭环技术的VO系统的出现，VO和SLAM之间的边界更加分散。视觉SLAM的目标是使用移动板载的传感器来构建环境地图并实时计算地图中物体的姿态。相比之下，VO系统将注意力放在计算物体的自我运动上，而不是构建地图上。SLAM地图的最大优势在于，它允许在BA中匹配和使用以前的观测，执行三种类型的数据关联:
+**短期数据关联**：----匹配最近几秒内获得的地图元素。这是大多数VO系统使用的唯一数据关联类型，一旦环境元素离开视野，它们就会被丢弃，即使系统在同一区域移动，也会导致持续的估计漂移。
+**中期数据关联**：----匹配离累计漂移仍然较小相机较近的地图元素。这些可以在BA中以与短期观测相同的方式进行匹配和使用，并允许系统在地图区域移动时达到零漂移。它们是我们的系统与具有回环检测的VO系统相比获得更高精度的关键。
+**长期数据关联**：----使用位置识别技术将观察结果与以前访问过的区域中的元素进行匹配，而不管累积漂移(回环检测)或跟踪是否丢失(重定位)。长期匹配允许使用位姿图优化或更准确地说，使用BA来重置漂移和校正回环。这是中大型环型环境下SLAM精度的关键。
+在这项工作中，我们建立在ORB-SLAM [2]，[3]和ORBSLAM Visual-Inertial [4]的基础上，这是第一个能够充分利用短期、中期和长期数据关联的视觉和视觉-惯性系统，在建图区域达到零漂移。在这里，我们进一步提供了多地图数据关联，这使我们能够匹配和使用来自先前建图的BA地图元素，实现了SLAM系统的真正目标:构建一个以后可以用来提供精确定位的地图。
+ORB-SLAM3的主要创新是：
+    **A monocular and stereo visual-inertial SLAM system**：
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 一种单目和立体视觉惯性SLAM系统，即使在惯性测量单元初始化阶段，也完全依赖于最大后验估计。所提出的初始化方法先前已在[6]中介绍过。这里我们添加了它与ORB-SLAM视觉惯性[4]的集成，并在公共数据集进行彻底评估。我们的结果表明，单目和立体视觉惯性系统是极其鲁棒的，并且比其他视觉惯性方法更加精确，甚至在没有回环的序列中也是如此。
+ **B High-recall place recognition**
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 高召回率地点识别。许多最近的视觉SLAM和VO系统[2]，[7]，[8]使用DBoW2词袋库包解决了位置识别问题[9]。DBoW2需要时间一致性，在检查几何一致性之前，将三个连续的关键帧匹配到同一区域，以牺牲召回为代价来提高精度。结果，系统在回环检测和重用以前的地图方面太慢。我们提出了一种新的位置识别算法，首先检查候选关键帧的几何一致性，然后检查与三个可共视关键帧的局部一致性，这三个关键帧在大多数情况下已经在地图中。这种策略提高了查全率，增加了数据关联的密度，提高了地图精度，但代价是计算成本稍高。
+ **C ORB-SLAM Atlas**
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORB-SLAM Atlas，第一个完整的多地图SLAM系统，能够处理视觉和视觉惯性系统，在单目和立体配置中。地图集可以表示一组不连续的地图，并在其上平滑地应用所有的建图操作:位置识别、相机重新定位、循环闭合回环和精确的无缝地图合并。这允许自动使用和组合在不同时间构建的地图，执行增量多session SLAM。视觉传感器的ORBSLAM地图集的初步版本在[10]中介绍。在这里，我们添加了新的地点识别系统，可视化多地图系统及其对公共数据集的评估。
+**D An abstract camera representation**
+一种抽象的摄像机表示，使得SLAM代码与所使用的摄像机模型无关，并允许通过提供投影、非投影和雅可比函数来添加新模型。我们提供了针孔[11]和鱼眼[12]模型的实现。
+
+<h3 id="RELATED-WORK"><a href="#RELATED-WORK" class="headerlink" title="RELATED WORK"></a>RELATED WORK</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 表一总结了最具代表性的视觉和视觉惯性系统，显示了用于估算和数据关联的主要技术。对于现代系统，表中包含的定性准确度和稳健性等级基于第七节中报告的比较，对于经典系统，基于文献[2]，[52]中以前的比较。
+
+<p><strong>A.Visual SLAM</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 单目SLAM首先在MonoSLAM [13]，[14]，[53]中使用扩展卡尔曼滤波器(EKF)和通过相关进行引导搜索的后续图像中跟踪的ShiTomasi点来解决。中期数据关联通过使用保证所用特征匹配一致的技术得到了显著改善，实现了手持可视SLAM [54]，[55]。
+相比之下，基于关键帧的方法仅使用几个选定的帧来估计地图，丢弃来自中间帧的信息。这允许以关键帧速率执行更昂贵但更精确的BA优化。最具代表性的系统是PTAM [16]，它将摄像机跟踪和建图分成两个并行的线程。对于相同的计算成本，基于关键帧的技术比滤波更精确[56]，成为视觉SLAM和VO的黄金标准。在[57]中，使用滑动窗口BA实现了大规模单目SLAM，在[58]中，使用双窗口优化和一个协方差图实现了大规模单目SLAM。
+基于这些想法，ORB-SLAM [2]，[3]使用ORB特征，其描述符提供短期和中期数据关联，建立一个协可视性图来限制跟踪和建图的复杂性，并使用词袋库DBoW2 [9]执行回环和重新定位，实现长期数据关联。到目前为止，是唯一一个集成了三种数据关联的可视化SLAM系统，我们认为这是其出色准确性的关键。在这项工作中，我们使用新的地图集系统提高了其在纯视觉SLAM中的鲁棒性，该系统在跟踪丢失时启动新的地图，并使用新的高召回率地点识别方法提高了其在复杂场景中的准确性。
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 直接方法不提取特征，而是直接使用图像中的像素强度，并通过最小化光度误差来估计运动和结构。LSD-SLAM [20]能够使用高梯度像素构建大规模半密集地图。然而，地图估计被简化为位姿图，精度低于PTAM和ORB-SLAM [2]。hybrid系统SVO [23]，[24]提取快速特征，使用直接方法从一帧到另一帧跟踪特征和任何具有非零强度梯度的像素，并使用重投影误差优化相机轨迹和3D结构。SVO效率极高，但作为一种纯VO方法，它只进行短期数据关联，这限制了它的准确性。直接稀疏里程计DSO [27]能够在特征点提取器表现不佳的情况下计算精确的相机姿态，增强低纹理区域或模糊图像的鲁棒性。它引入了局部光度BA，同时优化了7个最近关键帧的窗口和点的反向深度。这项工作的扩展包括立体视觉[29]，使用特征和DBoW2的闭环[59] [60]，以及视觉惯性里程计[46]。直接稀疏建图DSM [31]在直接方法中引入了建图重用的思想，显示了中期数据关联的重要性。在所有情况下，缺乏短期、中期和长期数据关联的整合会导致比我们的建议更低的准确性(见第七节)。
+**B.    Visual-Inertial SLAM**
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 视觉和惯性传感器的结合提供了对低纹理、运动模糊和遮挡的鲁棒性，并且在单目系统的情况下，使得尺度可观察。
+紧耦合方法的研究可以追溯到MSKF[33]，在MSKF[33]中，特征数量的EKF二次代价通过特征边缘化来避免。最初的系统在[34]中得到完善，并在[35]、[36]中扩展到立体视觉。第一个基于关键帧和集束调整的紧密耦合视觉里程计系统是OKVIS [38]，[39]，它也能够使用单目和立体视觉。然而这些系统依赖于特征，但ROVIO [41]，[42]使用直接数据关联为EFK提供光度误差。
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORB-SLAM-VI [4]首次提出了一种视觉惯性SLAM系统，该系统能够重用具有短期、中期和长期数据关联的地图，并在基于惯性测量单元预积分的精确局部视觉惯性BA中使用它们[61]，[62]。然而，其惯性测量单元初始化技术太慢，需要15秒钟，这降低了鲁棒性和准确性。
+Closed-form solution of visual-inertial structure from motion[63]
+Simultaneous state initialization and gyroscope bias calibration in visual inertial aided navigation[64]
+[63]，[64]中提出了更快的初始化技术，基于闭合形式的解来联合恢复尺度、重力、加速度计偏差和初始速度以及视觉特征深度。至关重要的是，它们忽略了惯性测量单元的噪声特性，并最小化了空间点的3D误差，而不是它们的重投影误差，这是基于特征的计算机视觉的黄金标准。我们以前的工作[65]表明，这导致了巨大的不可预测的错误。
+Kimera: an open source library for real-time metric-semantic localization and mappin[8]
+Visual-inertial mapping with non-linear factor recovery[47]
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VINS-Mono [7]是一个非常精确和鲁棒的单目里程计系统，使用DBoW2和4 DoF位姿图优化和地图合并进行闭环。特征跟踪是Lucas-Kanade跟踪器执行的，比描述符匹配稍微健壮一些。在VINS-Fusion [44]中，它已被拓展到立体和立体惯性。Kimera [8]是一个新颖的杰出的度量-语义建图系统，但它的度量部分包括立体-惯性里程计加上与DBoW2的闭环和姿态图优化，实现了与VINS-Fusion相似的精度。最近的BASALT [47]是一个立体视觉-惯性里程计系统，它从视觉-惯性里程计中提取非线性因子用于BA，并匹配ORB特征进行回环，实现非常好到极好的精度。  
+Direct sparse visual inertial odometry using dynamic marginalization[66]
+最近，VI-DSO [66]将DSO扩展到视觉惯性里程计。他们提出了一种捆绑调整，它将惯性观测与选定高梯度像素的光度误差相结合，从而提供非常好的精度。由于成功地利用了高梯度像素中的4个信息，在纹理较差的场景区域中也增强了鲁棒性。他们的初始化方法依赖于视觉惯性BA，需要20-30秒才能收敛到1%的标度误差内。
+在这项工作中，我们建立在ORB-SLAM-VI的基础上，并将其扩展到立体惯性SLAM。我们提出了一种新的基于最大后验估计的快速初始化方法，该方法充分考虑了视觉和惯性传感器的不确定性，在2秒钟内估计出误差为5%的真实尺度，在15秒钟内收敛到1%的尺度误差。
+### III. SYSTEM OVERVIEW
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORB-SLAM3建立在ORB-SLAM2 [3]和ORBSLAM-VI [4]之上。这是一个完整的多地图和多会话系统，能够在纯视觉或视觉惯性模式下工作，使用单眼、立体或RGB-D传感器，使用针孔和鱼眼相机模型。图1显示了主要的系统组件，这些组件与ORB-SLAM2的组件类似，但有一些重要的创新之处，下面进行总结。
+**Atlas**：地图集是由一组不相连的地图组成的多地图表示。有一个活动的地图，其中跟踪线程定位传入的帧，并由局部建图程使用新的关键帧不断优化和增长。我们将地图集中的其他地图称为非活动地图。系统建立一个独特的关键帧数据库，用于重新定位、回环检测和地图合并。
+**Tracking thread**：跟踪线程处理传感器信息，并实时计算当前帧相对于活动地图的姿态，将匹配地图特征点的重投影误差降至最低。它还决定当前帧是否成为关键帧。在视觉惯性模式下，通过在优化中包含惯性残差来估计体速度和IMU偏差。当追踪丢失时，追踪线程试图在所有地图集的地图中重新定位当前帧。如果重新定位，跟踪将恢复，并在需要时切换活动地图。否则，在一定时间后，活动地图被存储为非活动地图，并从头开始初始化新的活动地图。
+**Local mapping thread**：局部建图线程向活动地图添加关键帧和点，移除冗余的关键帧和点，并使用视觉或视觉惯性集束调整来细化地图，在靠近当前帧的关键帧的本地窗口中操作。另外，在惯性情况下，惯性测量单元参数由建图线程使用我们新颖的最大后验（MAP）估计技术来初始化和细化。
+**Loop and map merging thread**：回环和地图合并线程以关键帧速率检测活动地图和整个地图集之间的公共区域。如果公共区域属于活动地图，它执行回环校正；如果它属于不同的地图，则两个地图会无缝地合并成一个地图，成为活动地图。回环校正后，在独立线程中启动一个完整的BA，以进一步细化建图，而不影响实时性能。
 
     </div>
 
@@ -258,15 +296,6 @@
 
         
 
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/2021/04/25/hello-world/" rel="prev" title="Hello World">
-                  <i class="fa fa-chevron-left"></i> Hello World
-                </a>
-            </div>
-            <div class="post-nav-item">
-            </div>
-          </div>
     </footer>
   </article>
 </div>
